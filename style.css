@@ -1,0 +1,87 @@
+body {
+  background-color: #333; /* Dark background color */
+  font-family: "Verdana", sans-serif; /* Font family */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff; /* Light text color */
+}
+
+.box {
+  background-color: #444; /* Darker box background color */
+  border-radius: 10px; /* Increased border radius */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 350px; /* Increased width */
+  text-align: center;
+  padding: 30px; /* Increased padding */
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: #3498db; /* Updated heading color */
+}
+
+.inputBox {
+  position: relative;
+  margin-bottom: 30px; /* Increased margin-bottom */
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 15px; /* Increased padding */
+  box-sizing: border-box;
+  border: 2px solid #3498db; /* Updated border color and thickness */
+  border-radius: 5px;
+  margin-top: 10px;
+  outline: none;
+  background-color: #555; /* Darker input background color */
+  color: #fff; /* Light text color for input */
+}
+
+span {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  color: #777;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+input:focus + span,
+input:valid + span {
+  top: -12px;
+  font-size: 12px;
+  color: #3498db;
+}
+
+.links {
+  margin-top: 20px; /* Increased margin-top */
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold; /* Added font-weight */
+}
+
+input[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9; /* Darker hover color */
+}
